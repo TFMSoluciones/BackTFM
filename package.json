@@ -1,0 +1,25 @@
+{
+  "name": "backtfm",
+  "version": "1.0.0",
+  "description": "Backend TFM Soluciones App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TFMSoluciones/BackTFM.git"
+  },
+  "keywords": [
+    "tfmsoluciones",
+    "mongoDB",
+    "express",
+    "nodejs"
+  ],
+  "author": "TFM Soluciones / Gustavo Romero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TFMSoluciones/BackTFM/issues"
+  },
+  "homepage": "https://github.com/TFMSoluciones/BackTFM#readme"
+}
