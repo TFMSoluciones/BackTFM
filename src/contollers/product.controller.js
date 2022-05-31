@@ -1,5 +1,5 @@
 export const createProduct = (req, res) => {
-
+    res.json('creating product');
 }
 
 export const getProducts = (req, res) => {
