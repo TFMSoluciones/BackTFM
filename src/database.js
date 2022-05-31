@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import colors from 'colors';
 
 require('dotenv').config();
 
@@ -8,9 +9,9 @@ mongoose.connect(connectionString, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
-    console.log('Connected to mongoDB')
+    console.log(colors.bold.green('Connected to mongoDB'))
 })
     .catch((err) => {
-        console.log('Not connected to mongoDB');
+        console.log(colors.bold.red('Not connected to mongoDB'));
         console.log(err);
     });

@@ -1,6 +1,9 @@
 import app from './app';
-import './database'
+import './database';
+import colors from 'colors';
 
-app.listen(3000);
+const PORT = process.env.PORT || 3000
 
-console.log('server listen on port', 3000);
+app.listen(PORT, () => {
+    console.log(colors.rainbow('server running on port ' + PORT));
+});
