@@ -24,14 +24,23 @@ export const getProducts = async (req, res) => {
 }
 
 export const getProduct = async (req, res) => {
-    const product = await Product.findById(req.params.productId);
+    const product = await Product
+        .findById(req.params.productId);
     res.json(product);
 }
 
 export const updateProduct = async (req, res) => {
-
+    const productUpdated = await Product
+        .findByIdAndUpdate(
+            req.params.productId,
+            req.body,
+            { new: true }
+        );
+    res.status(200).json(productUpdated);
 }
 
 export const deleteProduct = async (req, res) => {
-
+    const { productId } = req.params;
+    await Product.findByIdAndDelete(productId);
+    res.status(204).json();
 }
